@@ -10,9 +10,9 @@ public class FileTranslator {
         try {
             Scanner sc = new Scanner(userData).useDelimiter(":");
             while (sc.hasNextLine()) {
-                System.out.println(sc.next());
+              //  System.out.println(sc.next());
              //   fileContaints += ":" + sc.next();
-              //  fileContaints += sc.next();
+                fileContaints += "\n" + sc.next();
             }
         } catch (IOException e) {
             System.out.print(e);
